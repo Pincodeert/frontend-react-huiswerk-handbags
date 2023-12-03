@@ -1,27 +1,40 @@
 import './App.css'
+import ButtonItem from "./components/buttonItem.jsx";
 
 function App() {
 
-  function logToTheCollection() {
-      console.log("to the collection");
-  }
-
-  function logShopAllBags() {
-      console.log("shop all bags");
-  }
-
-  function logPreOrders() {
-      console.log("pre-orders");
-  }
+  // function logToTheCollection() {
+  //     console.log("to the collection");
+  // }
+  //
+  // function logShopAllBags() {
+  //     console.log("shop all bags");
+  // }
+  //
+  // function logPreOrders() {
+  //     console.log("pre-orders");
+  // }
 
   return (
       <>
         <header>
         <h1>Handbags & Purses</h1>
         <nav>
-          <button type="button" onClick={logToTheCollection}>to the collection</button>
-          <button type="button" onClick={logShopAllBags}>shop all bags</button>
-          <button type="button" onClick={logPreOrders}>pre-orders</button>
+            <ButtonItem
+                buttonText="to the collection"
+                isDisabled={false}
+            />
+            <ButtonItem
+                buttonText="shop all bags"
+                isDisAbled={false}
+            />
+            <ButtonItem
+                buttonText="pre-orders"
+                isDisabled={true}
+            />
+          {/*<button type="button" onClick={logToTheCollection} disabled={true}>to the collection</button>*/}
+          {/*<button type="button" onClick={logShopAllBags}>shop all bags</button>*/}
+          {/*<button type="button" onClick={logPreOrders} disabled={true}>pre-orders</button>*/}
         </nav>
         </header>
         <main>
