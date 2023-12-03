@@ -9,23 +9,18 @@
 //3. Kopieer de bestaande code naar jouw component
 //4. Importeer het component naar App.jsx en check of de component ook wordt weergegeven (soms moet je een regeltje uitzetten)
 //5. Welke overeenkomsten zie je en hoe zou je die properties noemen?
-// productLabel, productImage, productTitle, productPrice
+//
 //6. Geef de properties (geef ze ook een waarde) vanuit App.jsx mee aan het component
 //7. Ontvang de propererties in het component (props)
 //8. Geef de properties op de juiste plek weer
 //9. Optioneel: destructure alle properties
 
-
-
-function ProductCard(props) {
+function Tile(props) {
     return (
-        <article>
-            <span>{props.productLabel}</span>
-            <img src={props.productImage} alt={props.productTitle}/>
-            <p>{props.productTitle}</p>
-            <h4>{props.productPrice}</h4>
-        </article>
-    );
+        <section>
+            {props.children}
+        </section>
+    )
 }
 
-export default ProductCard;
+export default Tile;
