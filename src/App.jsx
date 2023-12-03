@@ -3,6 +3,8 @@ import bag1 from "./assets/bag_1.png";
 import bag2 from "./assets/bag_2.png";
 import bag3 from "./assets/bag_3.png";
 import bag4 from "./assets/bag_4.png";
+import brand from "./assets/brand.png";
+import story from "./assets/our_story.png"
 import ButtonItem from "./components/buttonItem.jsx";
 import createPriceString from "./helpers/createPriceString.js";
 import ProductCard from "./components/ProductCard.jsx";
@@ -92,10 +94,29 @@ function App() {
             {/*    <p>The trendy bag</p>*/}
             {/*    <h4>{createPriceString(150)}</h4>*/}
             {/*</article>*/}
-
         </main>
         <footer>
-
+            <section>
+                <h2>THE BRAND</h2>
+                <p>bla die bla die bladie bla Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Consectetur deserunt, fuga ipsam iure laudantium magnam recusandae rem unde veniam!
+                    Ad aliquid animi consectetur cupiditate error esse illo, inventore natus perferendis
+                    quas sed vel. Beatae eligendi nisi odio omnis? Deserunt fugit nulla quasi sit?</p>
+            </section>
+            <section>
+                <img src={brand} alt="brand image"/>
+            </section>
+            <section>
+                <img src={story} alt="our story image"/>
+            </section>
+            <section>
+                <h2>OUR STORY</h2>
+                <p> onsectetur adipisicing elit.
+                    Consectetur deserunt, fuga ipsam iure laudantium magnam recusandae rem unde veniam!
+                    Ad aliquid animi consectetur cupiditate error esse illo, inventore natus perferendis
+                    quas sed vel. Beatae eligendi nisi odio omnis? Deserunt fugit nulla quasi sit? Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit.</p>
+            </section>
         </footer>
       </>
   )
