@@ -97,27 +97,25 @@ function App() {
             {/*</article>*/}
         </main>
         <footer>
-            <Tile>
-                <h2>The brand</h2>
+            <Tile tileTitle="the brand">
                 <p>bla die bla die bladie bla Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Consectetur deserunt, fuga ipsam iure laudantium magnam recusandae rem unde veniam!
                     Ad aliquid animi consectetur cupiditate error esse illo, inventore natus perferendis
                     quas sed vel. Beatae eligendi nisi odio omnis? Deserunt fugit nulla quasi sit?</p>
             </Tile>
-            <Tile>
-                <img src={brand} alt="brand image"/>
-            </Tile>
-            <Tile>
-                <img src={story} alt="our story image"/>
-            </Tile>
-            <Tile>
-                <h2>our story</h2>
+
+            <Tile tileImage={brand} tileImageDescription="brand image" />
+
+            <Tile tileImage={story} tileImageDesctiption="our story image" />
+
+            <Tile tileTitle="our story">
                 <p>onsectetur adipisicing elit.
                     Consectetur deserunt, fuga ipsam iure laudantium magnam recusandae rem unde veniam!
                     Ad aliquid animi consectetur cupiditate error esse illo, inventore natus perferendis
                     quas sed vel. Beatae eligendi nisi odio omnis? Deserunt fugit nulla quasi sit? Lorem ipsum dolor
                     sit amet, consectetur adipisicing elit.</p>
             </Tile>
+
             {/*<section>*/}
             {/*    <h2>THE BRAND</h2>*/}
             {/*    <p>bla die bla die bladie bla Lorem ipsum dolor sit amet, consectetur adipisicing elit.*/}

@@ -9,7 +9,7 @@
 //3. Kopieer de bestaande code naar jouw component
 //4. Importeer het component naar App.jsx en check of de component ook wordt weergegeven (soms moet je een regeltje uitzetten)
 //5. Welke overeenkomsten zie je en hoe zou je die properties noemen?
-//
+// tileTitle tileImage tileImageDescription children
 //6. Geef de properties (geef ze ook een waarde) vanuit App.jsx mee aan het component
 //7. Ontvang de propererties in het component (props)
 //8. Geef de properties op de juiste plek weer
@@ -17,9 +17,11 @@
 
 function Tile(props) {
     return (
-        <section>
+         <section>
+            {props.tileImage && <img src={props.tileImage} alt={props.tileImageDescription}/>}
+            <h2>{props.tileTitle}</h2>
             {props.children}
-        </section>
+         </section>
     )
 }
 
